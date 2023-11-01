@@ -141,6 +141,15 @@ void map:: go_in() {
     }
 }
 
+void map:: go_out() {
+    if (player -> in_area()) {
+        player -> reset_in_build(0);
+        std:: cout << "Вы вышли.\n";
+    } else {
+        std:: cout << "Вы не в помещении.\n";
+    }
+}
+
 void map:: go_to(std:: string loc_name) {
     Area * area = search_area(loc_name);
     Area * area_old = search_area(player -> get_locate());

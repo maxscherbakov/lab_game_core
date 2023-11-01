@@ -27,7 +27,6 @@ void createNPC(map * punk) {
 
 void createEnemy(map * punk) {
     punk -> builds[0].add_enemy("Аспирант", 130, 100, "зачет1");
-
     punk -> builds[0].add_enemy("Препод", 150, 110, "зачет2");
 }
 
@@ -47,7 +46,6 @@ int main() {
     createBuilds(&punk);
     createNPC(&punk);
     createEnemy(&punk);
-
     
     string move;
     cout << "Выберите класс (студент-первак, студент-гений, профессор)\n";
@@ -118,20 +116,10 @@ int main() {
                 
             }
         }
-        else if (move == "войти") {
-            punk.go_in();
-        }
-        else if (move == "выйти") {
-            if (punk.player -> in_area()) {
-                punk.player -> reset_in_build(0);
-                cout << "Вы вышли.\n";
-            } else {
-                cout << "Вы не в помещении.\n";
-            }
-        } else {
+        else if (move == "войти") punk.go_in();
+        else if (move == "выйти") punk.go_out();
+        else {
             cout << "Нет такой команды.\n";
         }
     }
-
-
 }

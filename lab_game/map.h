@@ -61,6 +61,7 @@ struct map {
     Build * search_build(std::string);
     Shop * search_shop(std:: string);
     void go_in();
+    void go_out();
     void go_to(std:: string);
     Area * search_area(std:: string);
 
