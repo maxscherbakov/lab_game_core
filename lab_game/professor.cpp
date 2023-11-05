@@ -12,3 +12,7 @@ void Professor:: use_ability() {
         else { iq -= 15; power -= 20;}
     }
 }
+
+void Professor:: to_train() { std:: cout << "Этот навык недоступен\n"; }
+void Professor:: to_study() { std:: cout << "Этот навык недоступен\n"; }
+void Professor:: to_relax() { std:: cout << "Этот навык недоступен\n"; }
