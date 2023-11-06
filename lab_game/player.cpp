@@ -6,12 +6,12 @@ void Player:: use_ability() {
 
 void Player:: check_inventory() {
     std:: cout << "player name:   " << name << '\n';
-    std:: cout << "player helth:  " << helth << '\n';
+    std:: cout << "player health:  " << health << '\n';
     std:: cout << "Player iq      " << iq << '\n';
     std:: cout << "Player power:  " << power << '\n';
     std:: cout << "Player energy: " << energy << '\n';
     std:: cout << "player locate: " << locate;
-    if (in_build) std:: cout << "(внутри)";
+    if (in_building) std:: cout << "(внутри)";
     std:: cout << '\n';
     std:: cout << "Inventory:     ";
     for (auto i : items) std:: cout << i << "; ";

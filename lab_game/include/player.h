@@ -7,7 +7,7 @@
 class Player : public man {
     protected:
         int energy{100};
-        bool in_build{0};
+        bool in_building{0};
         bool in_fight{0};
         std:: vector <std:: string> items;
     public: 
@@ -17,10 +17,10 @@ class Player : public man {
         virtual void use_ability() = 0;
         void check_inventory();
         bool search_item(std:: string item_);
-        bool in_area() { return in_build; }
+        bool in_area() { return in_building; }
         bool get_in_fight() { return in_fight; }
         void reset_in_fight(bool t) { in_fight = t; }
-        void reset_in_build(bool t) { in_build = t; }
+        void reset_in_building(bool t) { in_building = t; }
         int get_energy() { return energy; }
         void add_item (std:: string item_) { items.push_back(item_); }
 };

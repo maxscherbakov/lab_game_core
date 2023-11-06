@@ -3,6 +3,7 @@
 #include "student-genious.h"
 #include "professor.h"
 #include <fstream>
+#include <iostream>
 using namespace std;
 
 void createBuilds(Map * punk) {
@@ -29,13 +30,13 @@ void createEnemy(Map * punk) {
 
 void rools(const char * text) {
     char text_;
-    ifstream is(text, ios::binary);
-    while (is.is_open()) {cout << text_; is.get(text_);}
+    ifstream is(text, ios_base::binary);
+    while (is) {is.get(text_), cout << 'a';}
     is.close();
 }
 
 void clear_cons() {
-    for (int i = 0; i < 40; ++i) cout << '\n';
+    for (int i = 0; i < 40; ++i) cout << endl;
 }
 
 enum Actions {
@@ -100,6 +101,7 @@ int main() {
             break;
         
         case ACTION:
+            if (punk.search_area(punk.player -> get_locate()) == 0) break;
             punk.search_area(punk.player -> get_locate()) -> scan_area();
             cout << "Выберите объект.\n";
             cin >> name;

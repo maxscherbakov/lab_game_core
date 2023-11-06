@@ -17,7 +17,7 @@ void Building:: scan_Enemy() {
     std:: cout << "Enemy: ";
     for (auto i : enemy_in) {
         if (i.is_alive()) std:: cout << i.get_name()<< "(iq: " << i.get_iq() << ", power: " << i.get_power() <<\
-         ", helth: " << i.get_helth() <<"); ";
+         ", health: " << i.get_helth() <<"); ";
     }
     std:: cout << '\n';
 }
@@ -73,9 +73,9 @@ void Building:: interact_with(std:: string name_enemy, Player * player) {
             } else {
                 std:: cout << "Вы нанесли " << my_damage << " урона.\n";
                 std:: cout << "Вам нанесли " << enemy_damage << " урона.\n";
-                std:: cout << player->get_name() << ":: helth: " << player->get_helth() \
+                std:: cout << player->get_name() << ":: health: " << player->get_helth() \
                     << " | iq: " << player->get_iq() << " | power: " << player->get_power() << '\n';
-                std:: cout << enemy -> get_name() << ":: helth: " << enemy -> get_helth() \
+                std:: cout << enemy -> get_name() << ":: health: " << enemy -> get_helth() \
                     << " | iq: " << enemy -> get_iq() << " | power: " << enemy -> get_power() << '\n';
                 std:: cout << "\"сбежать\", \"способность\" или дальше...\n";
                 std:: cin >> action;

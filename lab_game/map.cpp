@@ -25,7 +25,7 @@ void Map:: go_in() {
         if (item_ == "") {
         } else if (player -> search_item(item_)) { 
             std:: cout << "Использовал " << item_ << ".\n";
-            player -> reset_in_build(1);
+            player -> reset_in_building(1);
         } else {
             std:: cout << "Нужен " << item_ << ".\n";
         }
@@ -34,7 +34,7 @@ void Map:: go_in() {
 
 void Map:: go_out() {
     if (player -> in_area()) {
-        player -> reset_in_build(0);
+        player -> reset_in_building(0);
         std:: cout << "Вы вышли.\n";
     } else {
         std:: cout << "Вы не в помещении.\n";
