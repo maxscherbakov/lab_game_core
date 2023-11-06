@@ -3,8 +3,6 @@
 #include "student-genious.h"
 #include "professor.h"
 #include <fstream>
-#include <iostream>
-using namespace std;
 
 void createBuilds(Map * punk) {
     punk -> add_building("матмех", "студак");
@@ -28,20 +26,13 @@ void createEnemy(Map * punk) {
     punk -> search_area("матмех")->add("Препод", 150, 110, "зачет2");
 }
 
-void rools(const char * text) {
-    char text_;
-    ifstream is(text, ios_base::binary);
-    while (is) {is.get(text_), cout << 'a';}
-    is.close();
-}
-
 void clear_cons() {
-    for (int i = 0; i < 40; ++i) cout << endl;
+    for (int i = 0; i < 40; ++i) std:: cout << std:: endl;
 }
 
 enum Actions {
     GO_TO = 1, ACTION = 2, GO_IN = 3, GO_OUT = 4, INVENTORY = 5,
-    LOOK_AROUND = 6, RELAX = 7, STUDY = 8, TRAIN = 9, HELP = 10
+    LOOK_AROUND = 6, RELAX = 7, STUDY = 8, TRAIN = 9
 };
 
 enum Classes {
@@ -55,9 +46,9 @@ int main() {
     createEnemy(&punk);
     
     int action;
-    cout << "Выберите класс:\n1. Студент-первак\n2. Студент-гений\n3. Профессор\n";
+    std::cout << "Выберите класс:\n1. Студент-первак\n2. Студент-гений\n3. Профессор\n";
     while (true) {
-        cin >> action;
+        std::cin >> action;
         switch (action) {
             case STUDENT_FIRST:
                 punk.player = new student_pervak; 
@@ -69,31 +60,31 @@ int main() {
                 punk.player = new Professor; 
                 break;
             default:
-                cout << "Нет такого класса.\n";
+                std::cout << "Нет такого класса.\n";
         }
         if (punk.player != 0) break;
     }
-    cout << "Введите имя персонажа:" << endl;
-    string name;
-    cin >> name;
+    std::cout << "Введите имя персонажа:" << std::endl;
+    std::string name;
+    std::cin >> name;
     punk.player -> rename(name);
+    std:: cout << "Добро пожаловать в Петродворцовый учебно-научный комплекс (ПУНК).\n";
 
-    rools("welcome.txt");
     bool next = 1;
     while (next) {
-        cin >> action;
+        std::cin >> action;
         clear_cons();
         switch (action) {
         case GO_TO:
             if (punk.player -> in_area()) {
-                cout << "Выйдите из здания. (выйти)\n";
+                std::cout << "Выйдите из здания. (выйти)\n";
                 continue;
             }
 
-            cout << "Куда хотите пойти?\n";
-            cin >> name;
+            std::cout << "Куда хотите пойти?\n";
+            std::cin >> name;
             if (name == punk.player -> get_locate()) {
-                cout << "Вы уже здесь.\n";
+                std::cout << "Вы уже здесь.\n";
             } else {
                 punk.go_to(name);
                 
@@ -103,8 +94,8 @@ int main() {
         case ACTION:
             if (punk.search_area(punk.player -> get_locate()) == 0) break;
             punk.search_area(punk.player -> get_locate()) -> scan_area();
-            cout << "Выберите объект.\n";
-            cin >> name;
+            std::cout << "Выберите объект.\n";
+            std::cin >> name;
             punk.search_area(punk.player->get_locate())->interact_with(name, punk.player);
             break;
         
@@ -129,11 +120,8 @@ int main() {
         case TRAIN:
             punk.player->to_train();
             break;
-        case HELP:
-            rools("help.txt");
-            break;
         default:
-            cout << "Нет такой команды.\n";
+            std::cout << "Нет такой команды.\n";
             next = 0;
         }        
     }

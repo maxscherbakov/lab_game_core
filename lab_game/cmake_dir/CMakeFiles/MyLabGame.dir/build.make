@@ -69,24 +69,10 @@ include CMakeFiles/MyLabGame.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/MyLabGame.dir/flags.make
 
-CMakeFiles/MyLabGame.dir/main.cpp.o: CMakeFiles/MyLabGame.dir/flags.make
-CMakeFiles/MyLabGame.dir/main.cpp.o: ../main.cpp
-CMakeFiles/MyLabGame.dir/main.cpp.o: CMakeFiles/MyLabGame.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/max/work_area/lab_game_core/lab_game/cmake_dir/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/MyLabGame.dir/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyLabGame.dir/main.cpp.o -MF CMakeFiles/MyLabGame.dir/main.cpp.o.d -o CMakeFiles/MyLabGame.dir/main.cpp.o -c /home/max/work_area/lab_game_core/lab_game/main.cpp
-
-CMakeFiles/MyLabGame.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MyLabGame.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/max/work_area/lab_game_core/lab_game/main.cpp > CMakeFiles/MyLabGame.dir/main.cpp.i
-
-CMakeFiles/MyLabGame.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MyLabGame.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/max/work_area/lab_game_core/lab_game/main.cpp -o CMakeFiles/MyLabGame.dir/main.cpp.s
-
 CMakeFiles/MyLabGame.dir/map.cpp.o: CMakeFiles/MyLabGame.dir/flags.make
 CMakeFiles/MyLabGame.dir/map.cpp.o: ../map.cpp
 CMakeFiles/MyLabGame.dir/map.cpp.o: CMakeFiles/MyLabGame.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/max/work_area/lab_game_core/lab_game/cmake_dir/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/MyLabGame.dir/map.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/max/work_area/lab_game_core/lab_game/cmake_dir/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/MyLabGame.dir/map.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyLabGame.dir/map.cpp.o -MF CMakeFiles/MyLabGame.dir/map.cpp.o.d -o CMakeFiles/MyLabGame.dir/map.cpp.o -c /home/max/work_area/lab_game_core/lab_game/map.cpp
 
 CMakeFiles/MyLabGame.dir/map.cpp.i: cmake_force
@@ -100,7 +86,7 @@ CMakeFiles/MyLabGame.dir/map.cpp.s: cmake_force
 CMakeFiles/MyLabGame.dir/player.cpp.o: CMakeFiles/MyLabGame.dir/flags.make
 CMakeFiles/MyLabGame.dir/player.cpp.o: ../player.cpp
 CMakeFiles/MyLabGame.dir/player.cpp.o: CMakeFiles/MyLabGame.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/max/work_area/lab_game_core/lab_game/cmake_dir/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/MyLabGame.dir/player.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/max/work_area/lab_game_core/lab_game/cmake_dir/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/MyLabGame.dir/player.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyLabGame.dir/player.cpp.o -MF CMakeFiles/MyLabGame.dir/player.cpp.o.d -o CMakeFiles/MyLabGame.dir/player.cpp.o -c /home/max/work_area/lab_game_core/lab_game/player.cpp
 
 CMakeFiles/MyLabGame.dir/player.cpp.i: cmake_force
@@ -114,7 +100,7 @@ CMakeFiles/MyLabGame.dir/player.cpp.s: cmake_force
 CMakeFiles/MyLabGame.dir/professor.cpp.o: CMakeFiles/MyLabGame.dir/flags.make
 CMakeFiles/MyLabGame.dir/professor.cpp.o: ../professor.cpp
 CMakeFiles/MyLabGame.dir/professor.cpp.o: CMakeFiles/MyLabGame.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/max/work_area/lab_game_core/lab_game/cmake_dir/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/MyLabGame.dir/professor.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/max/work_area/lab_game_core/lab_game/cmake_dir/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/MyLabGame.dir/professor.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyLabGame.dir/professor.cpp.o -MF CMakeFiles/MyLabGame.dir/professor.cpp.o.d -o CMakeFiles/MyLabGame.dir/professor.cpp.o -c /home/max/work_area/lab_game_core/lab_game/professor.cpp
 
 CMakeFiles/MyLabGame.dir/professor.cpp.i: cmake_force
@@ -128,7 +114,7 @@ CMakeFiles/MyLabGame.dir/professor.cpp.s: cmake_force
 CMakeFiles/MyLabGame.dir/area.cpp.o: CMakeFiles/MyLabGame.dir/flags.make
 CMakeFiles/MyLabGame.dir/area.cpp.o: ../area.cpp
 CMakeFiles/MyLabGame.dir/area.cpp.o: CMakeFiles/MyLabGame.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/max/work_area/lab_game_core/lab_game/cmake_dir/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/MyLabGame.dir/area.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/max/work_area/lab_game_core/lab_game/cmake_dir/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/MyLabGame.dir/area.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyLabGame.dir/area.cpp.o -MF CMakeFiles/MyLabGame.dir/area.cpp.o.d -o CMakeFiles/MyLabGame.dir/area.cpp.o -c /home/max/work_area/lab_game_core/lab_game/area.cpp
 
 CMakeFiles/MyLabGame.dir/area.cpp.i: cmake_force
@@ -142,7 +128,7 @@ CMakeFiles/MyLabGame.dir/area.cpp.s: cmake_force
 CMakeFiles/MyLabGame.dir/shop.cpp.o: CMakeFiles/MyLabGame.dir/flags.make
 CMakeFiles/MyLabGame.dir/shop.cpp.o: ../shop.cpp
 CMakeFiles/MyLabGame.dir/shop.cpp.o: CMakeFiles/MyLabGame.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/max/work_area/lab_game_core/lab_game/cmake_dir/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/MyLabGame.dir/shop.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/max/work_area/lab_game_core/lab_game/cmake_dir/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/MyLabGame.dir/shop.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyLabGame.dir/shop.cpp.o -MF CMakeFiles/MyLabGame.dir/shop.cpp.o.d -o CMakeFiles/MyLabGame.dir/shop.cpp.o -c /home/max/work_area/lab_game_core/lab_game/shop.cpp
 
 CMakeFiles/MyLabGame.dir/shop.cpp.i: cmake_force
@@ -156,7 +142,7 @@ CMakeFiles/MyLabGame.dir/shop.cpp.s: cmake_force
 CMakeFiles/MyLabGame.dir/building.cpp.o: CMakeFiles/MyLabGame.dir/flags.make
 CMakeFiles/MyLabGame.dir/building.cpp.o: ../building.cpp
 CMakeFiles/MyLabGame.dir/building.cpp.o: CMakeFiles/MyLabGame.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/max/work_area/lab_game_core/lab_game/cmake_dir/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/MyLabGame.dir/building.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/max/work_area/lab_game_core/lab_game/cmake_dir/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/MyLabGame.dir/building.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyLabGame.dir/building.cpp.o -MF CMakeFiles/MyLabGame.dir/building.cpp.o.d -o CMakeFiles/MyLabGame.dir/building.cpp.o -c /home/max/work_area/lab_game_core/lab_game/building.cpp
 
 CMakeFiles/MyLabGame.dir/building.cpp.i: cmake_force
@@ -170,7 +156,7 @@ CMakeFiles/MyLabGame.dir/building.cpp.s: cmake_force
 CMakeFiles/MyLabGame.dir/student.cpp.o: CMakeFiles/MyLabGame.dir/flags.make
 CMakeFiles/MyLabGame.dir/student.cpp.o: ../student.cpp
 CMakeFiles/MyLabGame.dir/student.cpp.o: CMakeFiles/MyLabGame.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/max/work_area/lab_game_core/lab_game/cmake_dir/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/MyLabGame.dir/student.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/max/work_area/lab_game_core/lab_game/cmake_dir/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/MyLabGame.dir/student.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyLabGame.dir/student.cpp.o -MF CMakeFiles/MyLabGame.dir/student.cpp.o.d -o CMakeFiles/MyLabGame.dir/student.cpp.o -c /home/max/work_area/lab_game_core/lab_game/student.cpp
 
 CMakeFiles/MyLabGame.dir/student.cpp.i: cmake_force
@@ -184,7 +170,7 @@ CMakeFiles/MyLabGame.dir/student.cpp.s: cmake_force
 CMakeFiles/MyLabGame.dir/student-first.cpp.o: CMakeFiles/MyLabGame.dir/flags.make
 CMakeFiles/MyLabGame.dir/student-first.cpp.o: ../student-first.cpp
 CMakeFiles/MyLabGame.dir/student-first.cpp.o: CMakeFiles/MyLabGame.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/max/work_area/lab_game_core/lab_game/cmake_dir/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/MyLabGame.dir/student-first.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/max/work_area/lab_game_core/lab_game/cmake_dir/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/MyLabGame.dir/student-first.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyLabGame.dir/student-first.cpp.o -MF CMakeFiles/MyLabGame.dir/student-first.cpp.o.d -o CMakeFiles/MyLabGame.dir/student-first.cpp.o -c /home/max/work_area/lab_game_core/lab_game/student-first.cpp
 
 CMakeFiles/MyLabGame.dir/student-first.cpp.i: cmake_force
@@ -198,7 +184,7 @@ CMakeFiles/MyLabGame.dir/student-first.cpp.s: cmake_force
 CMakeFiles/MyLabGame.dir/student-genious.cpp.o: CMakeFiles/MyLabGame.dir/flags.make
 CMakeFiles/MyLabGame.dir/student-genious.cpp.o: ../student-genious.cpp
 CMakeFiles/MyLabGame.dir/student-genious.cpp.o: CMakeFiles/MyLabGame.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/max/work_area/lab_game_core/lab_game/cmake_dir/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/MyLabGame.dir/student-genious.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/max/work_area/lab_game_core/lab_game/cmake_dir/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/MyLabGame.dir/student-genious.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyLabGame.dir/student-genious.cpp.o -MF CMakeFiles/MyLabGame.dir/student-genious.cpp.o.d -o CMakeFiles/MyLabGame.dir/student-genious.cpp.o -c /home/max/work_area/lab_game_core/lab_game/student-genious.cpp
 
 CMakeFiles/MyLabGame.dir/student-genious.cpp.i: cmake_force
@@ -209,9 +195,22 @@ CMakeFiles/MyLabGame.dir/student-genious.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MyLabGame.dir/student-genious.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/max/work_area/lab_game_core/lab_game/student-genious.cpp -o CMakeFiles/MyLabGame.dir/student-genious.cpp.s
 
+CMakeFiles/MyLabGame.dir/main.cpp.o: CMakeFiles/MyLabGame.dir/flags.make
+CMakeFiles/MyLabGame.dir/main.cpp.o: ../main.cpp
+CMakeFiles/MyLabGame.dir/main.cpp.o: CMakeFiles/MyLabGame.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/max/work_area/lab_game_core/lab_game/cmake_dir/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/MyLabGame.dir/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyLabGame.dir/main.cpp.o -MF CMakeFiles/MyLabGame.dir/main.cpp.o.d -o CMakeFiles/MyLabGame.dir/main.cpp.o -c /home/max/work_area/lab_game_core/lab_game/main.cpp
+
+CMakeFiles/MyLabGame.dir/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MyLabGame.dir/main.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/max/work_area/lab_game_core/lab_game/main.cpp > CMakeFiles/MyLabGame.dir/main.cpp.i
+
+CMakeFiles/MyLabGame.dir/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MyLabGame.dir/main.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/max/work_area/lab_game_core/lab_game/main.cpp -o CMakeFiles/MyLabGame.dir/main.cpp.s
+
 # Object files for target MyLabGame
 MyLabGame_OBJECTS = \
-"CMakeFiles/MyLabGame.dir/main.cpp.o" \
 "CMakeFiles/MyLabGame.dir/map.cpp.o" \
 "CMakeFiles/MyLabGame.dir/player.cpp.o" \
 "CMakeFiles/MyLabGame.dir/professor.cpp.o" \
@@ -220,12 +219,12 @@ MyLabGame_OBJECTS = \
 "CMakeFiles/MyLabGame.dir/building.cpp.o" \
 "CMakeFiles/MyLabGame.dir/student.cpp.o" \
 "CMakeFiles/MyLabGame.dir/student-first.cpp.o" \
-"CMakeFiles/MyLabGame.dir/student-genious.cpp.o"
+"CMakeFiles/MyLabGame.dir/student-genious.cpp.o" \
+"CMakeFiles/MyLabGame.dir/main.cpp.o"
 
 # External object files for target MyLabGame
 MyLabGame_EXTERNAL_OBJECTS =
 
-MyLabGame: CMakeFiles/MyLabGame.dir/main.cpp.o
 MyLabGame: CMakeFiles/MyLabGame.dir/map.cpp.o
 MyLabGame: CMakeFiles/MyLabGame.dir/player.cpp.o
 MyLabGame: CMakeFiles/MyLabGame.dir/professor.cpp.o
@@ -235,6 +234,7 @@ MyLabGame: CMakeFiles/MyLabGame.dir/building.cpp.o
 MyLabGame: CMakeFiles/MyLabGame.dir/student.cpp.o
 MyLabGame: CMakeFiles/MyLabGame.dir/student-first.cpp.o
 MyLabGame: CMakeFiles/MyLabGame.dir/student-genious.cpp.o
+MyLabGame: CMakeFiles/MyLabGame.dir/main.cpp.o
 MyLabGame: CMakeFiles/MyLabGame.dir/build.make
 MyLabGame: CMakeFiles/MyLabGame.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/max/work_area/lab_game_core/lab_game/cmake_dir/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable MyLabGame"
