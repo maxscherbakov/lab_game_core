@@ -16,6 +16,7 @@ class man {
         std:: string locate{"spawn"};
         bool alive{1};
     public:
+        virtual ~man(){};
         std:: string get_locate() { return locate; }
         std:: string get_name() { return name; }
         int get_helth() { return health; }

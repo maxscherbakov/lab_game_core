@@ -11,6 +11,7 @@ class Player : public man {
         bool in_fight{0};
         std:: vector <std:: string> items;
     public: 
+        virtual ~Player(){};
         virtual void to_train() = 0;
         virtual void to_study() = 0;
         virtual void to_relax() = 0;

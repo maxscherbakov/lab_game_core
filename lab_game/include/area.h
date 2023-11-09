@@ -16,6 +16,7 @@ class Area {
         std:: string chekpoint_item;
         void scan_npc();
     public:
+        virtual ~Area(){};
         bool player_here{0};
         std:: string chek_item() { return chekpoint_item; }
         std:: string loc_name() { return locate_name; }
