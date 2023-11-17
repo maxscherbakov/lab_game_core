@@ -13,6 +13,11 @@ struct Map {
     void go_out();
     void go_to(std:: string);
     Area * search_area(std:: string);
+    ~Map() {
+        for (Area * i : map) {
+            delete i;
+        }
+    }
 
     private:
     std:: vector <Area *> map;
