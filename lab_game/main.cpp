@@ -20,7 +20,6 @@ void createNPC(Map * punk) {
     punk -> search_area("общага")->add_npc_out("консьерж", NO_ROLE);
 }
 
-
 void createEnemy(Map * punk) {
     punk -> search_area("матмех")->add("Аспирант", 130, 100, "зачет1");
     punk -> search_area("матмех")->add("Препод", 150, 110, "зачет2");
@@ -30,9 +29,23 @@ void clear_cons() {
     for (int i = 0; i < 40; ++i) std:: cout << std:: endl;
 }
 
+void help() {
+
+    std:: string fname = "help.txt";
+    std:: ifstream inp(fname);
+
+    if (inp.is_open()) {
+        std:: string str(std:: istreambuf_iterator<char>{inp}, {});
+        inp.close();
+        std:: cout << str;
+    } else {
+        std:: cout << "File not open\n";
+    }
+}
+
 enum Actions {
     GO_TO = 1, ACTION = 2, GO_IN = 3, GO_OUT = 4, INVENTORY = 5,
-    LOOK_AROUND = 6, RELAX = 7, STUDY = 8, TRAIN = 9
+    LOOK_AROUND = 6, RELAX = 7, STUDY = 8, TRAIN = 9, HELP = 10
 };
 
 enum Classes {
@@ -44,6 +57,7 @@ int main() {
     createBuilds(&punk);
     createNPC(&punk);
     createEnemy(&punk);
+
     
     int action;
     std::cout << "Выберите класс:\n1. Студент-первак\n2. Студент-гений\n3. Профессор\n";
@@ -69,7 +83,7 @@ int main() {
     std::cin >> name;
     punk.player -> rename(name);
     std:: cout << "Добро пожаловать в Петродворцовый учебно-научный комплекс (ПУНК).\n";
-
+    std:: cout << "Как играть? Введите \"10\".\n";
     bool next = 1;
     while (next) {
         std::cin >> action;
@@ -119,6 +133,9 @@ int main() {
             break;
         case TRAIN:
             punk.player->to_train();
+            break;
+        case HELP:
+            help();
             break;
         default:
             std::cout << "Нет такой команды.\n";
