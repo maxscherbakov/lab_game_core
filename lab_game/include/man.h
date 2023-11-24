@@ -24,6 +24,13 @@ class man {
         void rename(std:: string name_) { name = name_; }
         int get_iq() { return iq; }
         int get_power() { return power; }
+        /* Это довольно скользкая тема относительно сеттеров. Потому что
+         * они делают так, будто поля просто публичные. То есть инкапсуляция
+         * нарушается. Иногда, с этим можно справиться с использованием слова
+         * friend, который тоже не слишком гуд, но только расширяет границы
+         * инкапсуляции, а не полностью убирает ее. */
+        /* Но в твоем конкретном случае можно было немного иначе. Можно реализовать
+         * как во втором ответе: https://stackoverflow.com/questions/17934310/need-help-implementing-health-in-basic-c-attack-game */
         void reset_helth(int t) { health += t; }
         void death() { alive = 0; }
         bool is_alive() { return alive; }
